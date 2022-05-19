@@ -1,14 +1,13 @@
 var submit_button = document.getElementById("send")
 
-submit_button.onclick = function(){
-  var email = document.getElementById("email").value;
+submit_button.onclick = function(event){
+  event.preventDefault();
+  var email = document.getElementById("email_input").value;
   Swal.fire({
     title: '<strong>HTML <u>example</u></strong>',
     icon: 'info',
     html:
-      'You can use <b>bold text</b>, ' +
-      '<a href="//sweetalert2.github.io">links</a> ' +
-      'and other HTML tags',
+      'El email que has ingresado es: '+email+'el valor del texto es:',
     showCloseButton: true,
     showCancelButton: true,
     focusConfirm: false,
