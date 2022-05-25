@@ -9,9 +9,9 @@ submit_button.onclick = function(event){
     title: '<strong> your information is</strong>',
     icon: 'info',
     html:
-      'inserted email value is : '+email+' inserted name value is '+name+' inserted information is '+text,
+      'Inserted email value is : '+email+'<hr> Inserted name value is : '+name+'<hr> Inserted information is : '+text,
     showCloseButton: true,
-    showCancelButton: true,
+    showCancelButton: false,
     focusConfirm: false,
     confirmButtonText:
       '<i class="fa fa-thumbs-up"></i> Great!',
